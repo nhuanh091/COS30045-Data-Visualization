@@ -1,0 +1,52 @@
+/* GenAI-assisted: base styling and colour palette */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    background-color: #8b5a2b; /* brown */
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 40px;
+    cursor: pointer;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
+
+.top-nav li {
+    margin: 0 15px;
+    cursor: pointer;
+    color: #ffd966; /* yellow */
+    font-weight: bold;
+}
+
+.top-nav li:hover {
+    color: #ff9900; /* orange */
+}
+
+.active {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #8b5a2b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
