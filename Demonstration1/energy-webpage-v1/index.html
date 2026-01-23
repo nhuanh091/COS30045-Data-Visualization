@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Energy Smart Appliances</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="top-nav">
+        <!-- GenAI-assisted: navigation structure -->
+        <img src="images/power-logo.png" alt="Power Logo" class="logo" onclick="goHome()">
+
+        <ul>
+            <li onclick="navigate('home')" id="nav-home">Home</li>
+            <li onclick="navigate('tv')" id="nav-tv">Televisions</li>
+            <li onclick="navigate('about')" id="nav-about">About Us</li>
+        </ul>
+    </nav>
+</header>
+
+<main id="content">
+    <h1>Welcome to Energy Smart Appliances</h1>
+    <p>
+        Australian households are increasingly focused on reducing energy consumption.
+        Understanding appliance energy ratings can help reduce electricity bills and
+        environmental impact.
+    </p>
+</main>
+
+<footer>
+    <p>© <span id="year"></span> Your Name | GenAI used for code generation and learning support</p>
+</footer>
+
+<script src="js/navigation.js"></script>
+</body>
+</html>
