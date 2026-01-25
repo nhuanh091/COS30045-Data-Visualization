@@ -8,31 +8,48 @@
 <body>
 
 <header>
-    <nav class="top-nav">
-        <img src="images/PowerIcon.png" alt="Power Logo" class="logo" onclick="goHome()">
-        <ul>
-            <li onclick="navigate('home')" id="nav-home">Home</li>
-            <li onclick="navigate('tv')" id="nav-tv">Televisions</li>
-            <li onclick="navigate('about')" id="nav-about">About Us</li>
+    <nav class="navbar section-content">
+        <img src="images/PowerIcon.png" alt="Power Logo" class="logo" onclick="navigate('home')">
+
+
+        <ul class="nav-menu">
+            <li><a class="nav-link" data-page="home" onclick="navigate('home')">Home</a></li>
+            <li><a class="nav-link" data-page="tv" onclick="navigate('tv')">Televisions</a></li>
+            <li><a class="nav-link" data-page="about" onclick="navigate('about')">About Us</a></li>
         </ul>
     </nav>
 </header>
 
-<main id="content">
-    <h1>Energy Efficient Televisions</h1>
-    <p>
-        Modern televisions sold in Australia are rated using the Energy Rating Label.
-        Choosing higher star ratings can significantly reduce annual energy consumption.
-    </p>
-    <p>
-        Screen size, display technology, and usage time all impact power usage.
-    </p>
-</main>
+<section class="page-section">
+    <div class="section-content">
+        <h1>Energy Efficient Televisions</h1>
+
+        <div class="section-card">
+            <h2>Understanding Energy Ratings</h2>
+            <p>
+                Televisions in Australia display an Energy Rating Label.
+                Higher star ratings generally indicate lower electricity
+                consumption during typical household use.
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h2>What Affects Power Usage?</h2>
+            <p>
+                Screen size, brightness settings, and display technology
+                (LED, OLED, QLED) all influence energy consumption.
+            </p>
+        </div>
+    </div>
+</section>
 
 <footer>
-    <p>© <span id="year"></span> Your Name | GenAI used for code generation and learning support</p>
+    <div class="section-content footer-content">
+        <p>© <span id="2026"></span> Nguyen Thi Nhu Anh</p>
+        <p>GenAI assisted development</p>
+    </div>
 </footer>
 
-<script src="js/navigation.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

@@ -8,28 +8,47 @@
 <body>
 
 <header>
-    <nav class="top-nav">
-        <img src="images/PowerIcon.png" alt="Power Logo" class="logo" onclick="goHome()">
-        <ul>
-            <li onclick="navigate('home')" id="nav-home">Home</li>
-            <li onclick="navigate('tv')" id="nav-tv">Televisions</li>
-            <li onclick="navigate('about')" id="nav-about">About Us</li>
+    <nav class="navbar section-content">
+        <img src="images/PowerIcon.png" alt="Power Logo" class="logo" onclick="navigate('home')">
+        <ul class="nav-menu">
+            <li><a class="nav-link" data-page="home" onclick="navigate('home')">Home</a></li>
+            <li><a class="nav-link" data-page="tv" onclick="navigate('tv')">Televisions</a></li>
+            <li><a class="nav-link" data-page="about" onclick="navigate('about')">About Us</a></li>
         </ul>
     </nav>
 </header>
 
-<main id="content">
-    <h1>About Us</h1>
-    <p>
-        This website demonstrates basic web technologies while raising awareness
-        of appliance energy efficiency in the Australian market.
-    </p>
-</main>
+<section class="page-section alt">
+    <div class="section-content">
+        <h1>About This Website</h1>
+
+        <div class="section-card">
+            <h2>Project Purpose</h2>
+            <p>
+                This website was created to demonstrate the use of HTML, CSS,
+                JavaScript, and GitHub while exploring appliance energy consumption
+                in the Australian market.
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h2>Learning Focus</h2>
+            <p>
+                The project emphasises understanding front-end fundamentals,
+                responsible use of Generative AI, and the importance of explaining
+                all implemented code.
+            </p>
+        </div>
+    </div>
+</section>
 
 <footer>
-    <p>© <span id="year"></span> Your Name | GenAI used for code generation and learning support</p>
+    <div class="section-content footer-content">
+        <p>© <span id="2026"></span>Nguyen Thi Nhu Anh</p>
+        <p>GenAI used responsibly in accordance with COS30045 policy</p>
+    </div>
 </footer>
 
-<script src="js/navigation.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

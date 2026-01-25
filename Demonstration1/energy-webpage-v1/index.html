@@ -8,31 +8,47 @@
 <body>
 
 <header>
-    <nav class="top-nav">
-        <!-- GenAI-assisted: navigation structure -->
-        <img src="images/PowerIcon.png" alt="Power Logo" class="logo" onclick="goHome()">
-
-        <ul>
-            <li onclick="navigate('home')" id="nav-home">Home</li>
-            <li onclick="navigate('tv')" id="nav-tv">Televisions</li>
-            <li onclick="navigate('about')" id="nav-about">About Us</li>
+    <nav class="navbar section-content">
+        <img src="images/PowerIcon.png" alt="Power Logo" class="logo" onclick="navigate('home')">
+        <ul class="nav-menu">
+            <li><a class="nav-link" data-page="home" onclick="navigate('home')">Home</a></li>
+            <li><a class="nav-link" data-page="tv" onclick="navigate('tv')">Televisions</a></li>
+            <li><a class="nav-link" data-page="about" onclick="navigate('about')">About Us</a></li>
         </ul>
     </nav>
 </header>
 
-<main id="content">
-    <h1>Welcome to Energy Smart Appliances</h1>
-    <p>
-        Australian households are increasingly focused on reducing energy consumption.
-        Understanding appliance energy ratings can help reduce electricity bills and
-        environmental impact.
-    </p>
-</main>
+<section class="hero-section">
+    <div class="section-content">
+        <h1>Smarter Energy Choices for Australian Homes</h1>
+        <p>
+            Understanding appliance energy consumption helps Australian households
+            reduce electricity costs while supporting sustainability goals.
+        </p>
+    </div>
+</section>
+
+<section class="page-section alt">
+    <div class="section-content">
+        <div class="section-card">
+            <h2>Why Energy Efficiency Matters</h2>
+            <p>
+                Appliances contribute a significant portion of household energy use.
+                Choosing energy-efficient products can lower power bills and reduce
+                carbon emissions across Australia.
+            </p>
+        </div>
+    </div>
+</section>
 
 <footer>
-    <p>© <span id="year"></span> Your Name | GenAI used for code generation and learning support</p>
+    <div class="section-content footer-content">
+        <p>© <span id="2026"></span>Nguyen Thi Nhu Anh</p>
+        <p>Developed for COS30045</p>
+        <p>GenAI used for learning support and initial code generation</p>
+    </div>
 </footer>
 
-<script src="js/navigation.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

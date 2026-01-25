@@ -1,29 +1,25 @@
-// GenAI-assisted: navigation logic using JavaScript
+// GenAI-assisted: navigation highlighting based on current page
 
 function navigate(page) {
-    if (page === 'home') {
-        window.location.href = 'index.html';
-    } else if (page === 'tv') {
-        window.location.href = 'televisions.html';
-    } else if (page === 'about') {
-        window.location.href = 'about.html';
+    if (page === "home") window.location.href = "index.html";
+    if (page === "tv") window.location.href = "televisions.html";
+    if (page === "about") window.location.href = "about.html";
+}
+
+// Highlight active navigation link
+const currentPath = window.location.pathname;
+
+document.querySelectorAll(".nav-link").forEach(link => {
+    const page = link.dataset.page;
+
+    if (
+        (page === "home" && currentPath.includes("index")) ||
+        (page === "tv" && currentPath.includes("televisions")) ||
+        (page === "about" && currentPath.includes("about"))
+    ) {
+        link.classList.add("active");
     }
-}
-
-function goHome() {
-    window.location.href = 'index.html';
-}
-
-// Highlight current page
-const currentPage = window.location.pathname;
-
-if (currentPage.includes("index")) {
-    document.getElementById("nav-home")?.classList.add("active");
-} else if (currentPage.includes("televisions")) {
-    document.getElementById("nav-tv")?.classList.add("active");
-} else if (currentPage.includes("about")) {
-    document.getElementById("nav-about")?.classList.add("active");
-}
+});
 
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
