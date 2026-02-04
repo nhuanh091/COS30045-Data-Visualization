@@ -17,7 +17,7 @@ Generative AI tools were used in this project as **learning aids and productivit
 
 All AI-generated outputs were **reviewed, modified, and fully understood** before being included in the final submission.
 
-1. **AI Tools Used**
+2. **AI Tools Used**
 
 **2.1 ChatGPT (OpenAI)**
 
@@ -55,7 +55,7 @@ GitHub Copilot integrates directly into the IDE and supports incremental develop
 
 Provides quick clarification while remaining compliant with Swinburne’s Enterprise Data Protection policy.
 
-1. **Usage Details**
+3. **Usage Details**
 
 **3.1 Prompts Used (Representative Examples)**
 
@@ -588,7 +588,7 @@ Significant modifications were made, including:
 
 All final decisions were made manually after understanding the AI suggestions.
 
-1. **Inline AI Acknowledgement in Code**
+4. **Inline AI Acknowledgement in Code**
 
 AI-assisted sections were explicitly marked in code comments, for example:
 
@@ -596,7 +596,7 @@ AI-assisted sections were explicitly marked in code comments, for example:
 
 This ensures transparency and compliance with unit requirements.
 
-1. **Incremental Development & Version Control**
+5. **Incremental Development & Version Control**
 
 The project was developed incrementally using GitHub:
 
@@ -609,7 +609,7 @@ The project was developed incrementally using GitHub:
 
 Commits were made regularly to demonstrate ongoing progress rather than a single large submission.
 
-1. **Evidence of Learning and Investigation**
+6. **Evidence of Learning and Investigation**
 
 The following artefacts were collected during development:
 
@@ -624,7 +624,7 @@ The following artefacts were collected during development:
 
 These materials demonstrate active engagement with the learning process.
 
-1. **Reflection on the Use of Generative AI**
+7. **Reflection on the Use of Generative AI**
 
 Using Generative AI significantly improved development efficiency, particularly during early scaffolding and debugging stages. However, AI outputs were not always optimal and occasionally introduced issues such as unnecessary layout constraints or hard-coded values.
 
@@ -632,6 +632,6 @@ The most valuable learning occurred when AI outputs were questioned, refined, or
 
 Overall, GenAI functioned as a **collaborative assistant**, while all architectural and design decisions remained human-driven.
 
-1. **Acknowledgement**
+8. **Acknowledgement**
 
 This project includes code and ideas generated with the assistance of Generative AI tools, including ChatGPT, GitHub Copilot, and Gemini. All AI-generated content was reviewed, modified, and understood by the author. The final submission reflects the author’s own understanding and decisions.
