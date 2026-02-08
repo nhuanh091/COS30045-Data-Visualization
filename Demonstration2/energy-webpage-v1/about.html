@@ -1,0 +1,55 @@
+<!-- GenAI-assisted: navigation logic adapted and refined by the author -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | Energy Smart Appliances</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar section-content">
+        <img src="images/PowerIcon.png" alt="Power Logo" class="logo" onclick="navigate('home')">
+        <ul class="nav-menu">
+            <li><a class="nav-link" data-page="home" onclick="navigate('home')">Home</a></li>
+            <li><a class="nav-link" data-page="tv" onclick="navigate('tv')">Televisions</a></li>
+            <li><a class="nav-link" data-page="about" onclick="navigate('about')">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-section alt">
+    <div class="section-content">
+        <h1>About This Website</h1>
+
+        <div class="section-card">
+            <h2>Project Purpose</h2>
+            <p>
+                This website was created to demonstrate the use of HTML, CSS,
+                JavaScript, and GitHub while exploring appliance energy consumption
+                in the Australian market.
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h2>Learning Focus</h2>
+            <p>
+                The project emphasises understanding front-end fundamentals,
+                responsible use of Generative AI, and the importance of explaining
+                all implemented code.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="section-content footer-content">
+        <p>©2026 <span id="2026"></span>Nguyen Thi Nhu Anh</p>
+        <p>GenAI used responsibly in accordance with COS30045 policy</p>
+    </div>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

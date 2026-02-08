@@ -1,8 +1,5 @@
----
 
 # Data Story: Television Market Overview in Australia
-
----
 
 ## Step 1: Who is the audience?
 
