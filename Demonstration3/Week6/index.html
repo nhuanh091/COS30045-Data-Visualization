@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Energy Consumption Histogram | COS30045</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/visualization.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive TV Energy Consumption Histogram</h1>
+        <p>Filter by screen technology to explore energy consumption patterns.</p>
+    </header>
+
+    <main>
+        <div id="filters"></div>
+        <div id="chart"></div>
+        <div id="scatterplot"></div>
+    </main>
+
+    <footer>
+        <p>©2026 Nguyen Thi Nhu Anh | COS30045 Data Visualization</p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/shared-constants.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/scatterplot.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+</html>

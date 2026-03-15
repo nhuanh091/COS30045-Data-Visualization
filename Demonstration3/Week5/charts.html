@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Energy Consumption Charts | COS30045</title>
+    <link rel="stylesheet" href="../energy-webpage-v1/css/styles.css">
+    <style>
+        .chart-container {
+            margin: 40px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .chart-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .chart-description {
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .chart-svg {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        @media (max-width: 768px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TV Energy Consumption Data Visualizations</h1>
+        <p>Exploring energy efficiency in Australian televisions through various chart types.</p>
+    </header>
+
+    <main>
+        <section class="charts-grid">
+            <!-- Scatter Plot -->
+            <div class="chart-container">
+                <h2 class="chart-title">Scatter Plot: Energy Consumption vs Star Rating</h2>
+                <p class="chart-description">
+                    This scatter plot shows the relationship between energy consumption (kWh/year) and star rating for various TV models.
+                    Higher star ratings indicate better energy efficiency.
+                </p>
+                <div id="scatter-chart"></div>
+            </div>
+
+            <!-- Donut Chart -->
+            <div class="chart-container">
+                <h2 class="chart-title">Donut Chart: Energy by Screen Technology (All Sizes)</h2>
+                <p class="chart-description">
+                    Average energy consumption across all TV sizes, grouped by screen technology (LCD, LED, OLED).
+                    OLED TVs tend to consume more energy due to their premium display technology.
+                </p>
+                <div id="donut-chart"></div>
+            </div>
+
+            <!-- Bar Chart -->
+            <div class="chart-container">
+                <h2 class="chart-title">Bar Chart: Energy by Screen Technology (55-inch TVs)</h2>
+                <p class="chart-description">
+                    Average energy consumption for 55-inch TVs only, comparing different screen technologies.
+                    This focuses on a specific screen size to control for size variations.
+                </p>
+                <div id="bar-chart"></div>
+            </div>
+
+            <!-- Line Chart -->
+            <div class="chart-container">
+                <h2 class="chart-title">Line Chart: Spot Power Prices (1998-2024)</h2>
+                <p class="chart-description">
+                    Historical spot electricity prices across Australian states from 1998 to 2024.
+                    Shows trends in energy costs that influence appliance efficiency decisions.
+                </p>
+                <div id="line-chart"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2026 Nguyen Thi Nhu Anh | COS30045 Data Visualization</p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/scatter.js"></script>
+    <script src="js/donut.js"></script>
+    <script src="js/bar.js"></script>
+    <script src="js/line.js"></script>
+</body>
+</html>

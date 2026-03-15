@@ -1,0 +1,24 @@
+/* Visualization specific styles */
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: darkblue;
+}
+
+.axis text {
+    font-size: 12px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: bold;
+}
