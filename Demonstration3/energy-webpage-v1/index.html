@@ -1,0 +1,60 @@
+<!-- GenAI-assisted: navigation logic adapted and refined by the author -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Energy Smart Appliances</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar section-content">
+        <img src="images/PowerIcon.png" alt="Power Logo" class="logo" onclick="navigate('home')">
+        <ul class="nav-menu">
+            <li><a class="nav-link" data-page="home" onclick="navigate('home')">Home</a></li>
+            <li><a class="nav-link" data-page="tv" onclick="navigate('tv')">Televisions</a></li>
+            <li><a class="nav-link" data-page="about" onclick="navigate('about')">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero-section">
+    <div class="section-content">
+        <h1>Smarter Energy Choices for Australian Homes</h1>
+        <p>
+            Understanding appliance energy consumption helps Australian households
+            reduce electricity costs while supporting sustainability goals.
+        </p>
+    </div>
+</section>
+
+<section class="page-section alt">
+    <div class="section-content">
+        <div class="section-card">
+            <h2>Why Energy Efficiency Matters</h2>
+            <p>
+                Appliances contribute a significant portion of household energy use.
+                Choosing energy-efficient products can lower power bills and reduce
+                carbon emissions across Australia.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Responsive SVG container for exercises -->
+<div class="responsive-svg-container"></div>
+
+<footer>
+    <div class="section-content footer-content">
+        <p>©2026 <span id="2026"></span>Nguyen Thi Nhu Anh</p>
+        <p>Developed for COS30045</p>
+        <p>GenAI used for learning support and initial code generation</p>
+    </div>
+</footer>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="js/d3-demo.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

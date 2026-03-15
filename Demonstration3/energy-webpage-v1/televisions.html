@@ -1,0 +1,123 @@
+<!-- GenAI-assisted: navigation logic adapted and refined by the author -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Televisions | Energy Smart Appliances</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar section-content">
+        <img src="images/PowerIcon.png" alt="Power Logo" class="logo" onclick="navigate('home')">
+
+        <ul class="nav-menu">
+            <li><a class="nav-link" data-page="home" onclick="navigate('home')">Home</a></li>
+            <li><a class="nav-link" data-page="tv" onclick="navigate('tv')">Televisions</a></li>
+            <li><a class="nav-link" data-page="about" onclick="navigate('about')">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-section">
+    <div class="section-content">
+
+        <!-- Frame 1: Introduction -->
+        <h1>Television Market Overview in Australia</h1>
+        <p>
+            This page explores the Australian television market using data from
+            registered TV products available for sale in Australia. The visualisations
+            below provide a high-level overview of screen technologies, screen sizes,
+            and brand presence to help readers understand current market trends.
+        </p>
+
+        <!-- Frame 2: Screen Technologies -->
+        <div class="section-card">
+            <h2>Screen Technologies Available</h2>
+            <p>
+                Different television models use different screen technologies,
+                such as LED, LCD, OLED, and Plasma. The chart below shows how
+                frequently each technology appears in the Australian market.
+                This helps identify which technologies dominate and which are less common.
+            </p>
+
+            <!-- Chart image -->
+            <img src="images/chart1.png"
+                 alt="Bar chart showing number of TV models by screen technology"
+                 class="chart-image">
+
+            <p class="chart-insight">
+                <strong>Insight:</strong> LED televisions account for the largest share of
+                available models, indicating that this technology is currently the most
+                widespread in Australia.
+            </p>
+        </div>
+
+        <!-- Frame 3: Screen Sizes -->
+        <div class="section-card">
+            <h2>Screen Sizes on the Market</h2>
+            <p>
+                Television screen sizes are typically advertised in inches and are an
+                important factor for consumers when choosing a TV. The following chart
+                groups televisions into common advertised screen size categories to show
+                which sizes are most widely available.
+            </p>
+
+            <!-- Chart image -->
+            <img src="images/chart2.png"
+                 alt="Bar chart showing number of TV models by screen size category"
+                 class="chart-image">
+
+            <p class="chart-insight">
+                <strong>Insight:</strong> Medium to large screen sizes are the most common,especially TVs with 75+ in inches screensize, suggesting that consumer demand has shifted toward
+                larger televisions.
+            </p>
+        </div>
+
+        <!-- Frame 4: Brands -->
+        <div class="section-card">
+            <h2>Brands with the Most TV Models</h2>
+            <p>
+                Not all brands offer the same range of television models. The chart below
+                compares brands based on the number of distinct TV models they have
+                registered for sale in Australia, highlighting market dominance and
+                product diversity.
+            </p>
+
+            <!-- Chart image -->
+            <img src="images/chart3.png"
+                 alt="Horizontal bar chart showing number of TV models by brand"
+                 class="chart-image">
+
+            <p class="chart-insight">
+                <strong>Insight:</strong> A small number of major brands offer a
+                significantly larger range of models, indicating strong market presence
+                and competition among leading manufacturers. Among all brands, Samsung has the largest number of models, following by kogan and LG.
+            </p>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="section-card">
+            <h2>What This Tells Us</h2>
+            <p>
+                Together, these visualisations show that the Australian television market
+                is dominated by a small number of screen technologies, popular mid-to-large
+                screen sizes, and a few major brands. This overview helps consumers,
+                students, and analysts better understand how the TV market is structured.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="section-content footer-content">
+        <p>©2026 <span id="2026"></span> Nguyen Thi Nhu Anh</p>
+        <p>GenAI assisted development</p>
+    </div>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

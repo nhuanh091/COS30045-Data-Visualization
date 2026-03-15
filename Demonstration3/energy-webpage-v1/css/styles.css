@@ -1,0 +1,205 @@
+/* Importing Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root {
+    /* Colors */
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #f7c319;
+    --secondary-color: #fcdb6d;
+    --light-lime-color: #fdfbcf;
+    --medium-gray-color: #ccc;
+
+    /* Font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* Font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    /* Site max width */
+    --site-max-width: 1300px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+/* styling header*/
+header {
+    background: var(--primary-color);
+    width: 100%;
+    z-index: 5;
+}
+
+header ul {
+    list-style: none;
+}
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar .logo {
+    width: 5%;             /* keep aspect ratio */
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--dark-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    /* color: var(--primary-color); */
+    background: var(--secondary-color);
+}
+
+.hero-section {
+    /* min-height: 100vh; */
+    background: var(--white-color);
+    display: flex;
+    padding: 100px;
+}
+
+.hero-section .section-content {
+    align-items: center;
+    margin: 50px 0 40px;
+    /* min-height: 100vh; */
+    max-width: 70%;
+    color: black;
+    justify-content: space-between;
+    font-size: var(--font-size-m);
+}
+
+/* Shared Page Sections */
+
+.page-section {
+    padding: 80px 0;
+    background: var(--white-color);
+}
+
+.page-section.alt {
+    background: var(--light-lime-color);
+}
+
+.section-card {
+    background: var(--white-color);
+    border-radius: var(--border-radius-s);
+    padding: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    margin-top: 30px;
+}
+
+.section-card h2 {
+    font-size: var(--font-size-l);
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.section-card p {
+    font-size: var(--font-size-n);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* =========================
+   Footer Styling
+========================= */
+
+footer {
+    background: var(--dark-color);
+    color: var(--white-color);
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    font-size: var(--font-size-s);
+}
+
+.footer-content span {
+    color: var(--secondary-color);
+}
+
+/* =========================
+   Active Navigation State
+========================= */
+
+.navbar .nav-menu .nav-link.active {
+    background: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
+}
+
+.chart-image {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Responsive container for D3-generated SVG canvases */
+.responsive-svg-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
