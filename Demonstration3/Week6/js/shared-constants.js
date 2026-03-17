@@ -25,7 +25,7 @@ let xScaleS, yScaleS;
 let innerChartS;
 
 // Tooltip constants
-const tooltipWidth = 120;
+const tooltipWidth = 180;
 const tooltipHeight = 40;
 const tooltipPadding = 5;
 
